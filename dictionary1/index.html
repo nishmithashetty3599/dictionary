@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary app</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-custom">
+    <div class="container-fluid" style="width: 100%">
+        <div class="navbar-header" >
+            <a class="navbar-brand" style="color:lightblue" href="#">Grandma Stories</a>
+        </div>
+        <form class="navbar-form navbar-left" action="/action_page.php">
+            <div class="form-group" style="padding-left: 337px ; padding-top: 15px" >
+                <div class="form__wrap" style="padding-left: 120px; position: absolute; bottom: 3px;" >
+                    <div class="input__wrap" >
+                        <input type="text" placeholder="Type a word" id="input">
+                        <button class="button01" id="search">Search</button>
+                        <button class="button01" id="reset" type="reset" value="reset" onclick="reloadPage()">Reset</button>
+
+                    </div>
+               </div>
+            </div>
+        </form>
+    </div>
+</nav>
+</body>
+<section class="data container">
+    <div class="container">
+        <span class="loading">Loading...</span>
+        <p class="def"></p>
+        <div class="audio"></div>
+        <div class="not__found"></div>
+    </div>
+</section>
+<script src="./app.js"></script>
+</html>
